@@ -1,0 +1,16 @@
+{
+  "name": "getcovered",
+  "version": "2.0.0",
+  "description": "Cover pages for university assignments. Vanilla HTML, CSS and JS.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node tests/run.mjs",
+    "docs": "node tools/gen-fields.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
