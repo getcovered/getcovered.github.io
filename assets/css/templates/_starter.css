@@ -1,0 +1,38 @@
+/*
+ * Starter template styles. When you copy this file:
+ *   - rename "starter" in every selector to your template id
+ *   - keep EVERY selector starting with .gc-page[data-template="your-id"]
+ *     (the tests reject unscoped selectors so templates cannot affect each other)
+ *   - use the layout variables the page engine gives you:
+ *       --gc-align     left | center | right          (text-align)
+ *       --gc-justify   flex-start | center | flex-end (flex alignment)
+ *       --gc-logo-base logo height at 100% size       (set it, don't resize the logo yourself)
+ *     The page itself (A4 size, margins) is handled for you.
+ */
+
+.gc-page[data-template="starter"] {
+  --gc-logo-base: 110px;
+  font-size: 12pt;
+  line-height: 1.5;
+}
+
+.gc-page[data-template="starter"] .st-type {
+  margin: 28px 0 6px;
+  font-size: 20pt;
+  text-align: var(--gc-align);
+}
+.gc-page[data-template="starter"] .st-title {
+  margin: 0 0 24px;
+  font-size: 14pt;
+  font-style: italic;
+  text-align: var(--gc-align);
+}
+.gc-page[data-template="starter"] .st-people {
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+.gc-page[data-template="starter"] .st-date {
+  margin-top: auto;
+  text-align: var(--gc-align);
+}

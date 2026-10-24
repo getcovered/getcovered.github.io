@@ -1,0 +1,117 @@
+/* Classic — the original BYCP cover. Every selector is scoped to this template. */
+
+.gc-page[data-template="classic"] {
+  --gc-logo-base: 130px;
+}
+
+.gc-page[data-template="classic"] .cl-logo {
+  flex: none;
+  padding-top: 10px;
+  margin-bottom: 44px;
+}
+
+/* Assignment type + ruled title */
+.gc-page[data-template="classic"] .cl-head {
+  flex: none;
+  text-align: var(--gc-align);
+}
+.gc-page[data-template="classic"] .cl-type {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14pt;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.gc-page[data-template="classic"] .cl-title {
+  display: block;
+  padding: 6px 0;
+  border-top: 1.5px solid #111;
+  border-bottom: 1.5px solid #111;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+/* Course strip */
+.gc-page[data-template="classic"] .cl-strip {
+  flex: none;
+  width: 100%;
+  margin: 65px 0 55px;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-weight: 700;
+}
+.gc-page[data-template="classic"] .cl-strip td {
+  padding: 5px 6px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.gc-page[data-template="classic"] .cl-code {
+  text-align: left;
+  white-space: nowrap;
+}
+.gc-page[data-template="classic"] .cl-course {
+  width: 60%;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-left: 1.5px solid #111;
+  border-right: 1.5px solid #111;
+  text-align: center;
+}
+.gc-page[data-template="classic"] .cl-sec {
+  text-align: right;
+  white-space: nowrap;
+}
+.gc-page[data-template="classic"] .cl-strip-term td {
+  padding-top: 8px;
+  text-align: var(--gc-align);
+}
+
+/* Submitted to | Submitted by */
+.gc-page[data-template="classic"] .cl-submitted {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  margin-top: 5px;
+  font-size: 12pt;
+}
+.gc-page[data-template="classic"] .cl-half {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.gc-page[data-template="classic"] .cl-to { padding-right: 20px; }
+.gc-page[data-template="classic"] .cl-by { padding-left: 20px; }
+.gc-page[data-template="classic"] .cl-rule {
+  flex: none;
+  width: 1.5px;
+  background: #111;
+}
+.gc-page[data-template="classic"] .cl-label {
+  margin: 0 0 8px;
+  font-size: inherit;
+  font-weight: 700;
+}
+.gc-page[data-template="classic"] .cl-line {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* Date */
+.gc-page[data-template="classic"] .cl-date {
+  display: flex;
+  flex: none;
+  justify-content: var(--gc-justify);
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+/* Printing: a line that only holds lorem ipsum disappears instead of leaving a gap. */
+@media print {
+  .gc-page[data-template="classic"] .cl-line:has(> .gc-dummy:only-child) {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+/* UI font: Instrument Sans, self-hosted. */
+@font-face { font-family: 'Instrument Sans'; font-weight: 400; font-style: normal; font-display: swap; src: url('../fonts/instrument-sans/instrument-sans-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Instrument Sans'; font-weight: 500; font-style: normal; font-display: swap; src: url('../fonts/instrument-sans/instrument-sans-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Instrument Sans'; font-weight: 600; font-style: normal; font-display: swap; src: url('../fonts/instrument-sans/instrument-sans-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Instrument Sans'; font-weight: 700; font-style: normal; font-display: swap; src: url('../fonts/instrument-sans/instrument-sans-latin-700-normal.woff2') format('woff2'); }
+
+/*
+ * Cover font: Book Antiqua when the computer has it (Windows and Office),
+ * otherwise TeX Gyre Pagella, a metric-compatible Palatino that ships with the app.
+ */
+@font-face { font-family: 'GC Cover'; font-weight: 400; font-style: normal; src: local('Book Antiqua'), local('BookAntiqua'), url('../fonts/pagella/pagella-regular.woff2') format('woff2'); }
+@font-face { font-family: 'GC Cover'; font-weight: 700; font-style: normal; src: local('Book Antiqua Bold'), local('BookAntiqua-Bold'), url('../fonts/pagella/pagella-bold.woff2') format('woff2'); }
+@font-face { font-family: 'GC Cover'; font-weight: 400; font-style: italic; src: local('Book Antiqua Italic'), local('BookAntiqua-Italic'), url('../fonts/pagella/pagella-italic.woff2') format('woff2'); }
+@font-face { font-family: 'GC Cover'; font-weight: 700; font-style: italic; src: local('Book Antiqua Bold Italic'), local('BookAntiqua-BoldItalic'), url('../fonts/pagella/pagella-bolditalic.woff2') format('woff2'); }

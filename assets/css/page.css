@@ -1,0 +1,95 @@
+/*
+ * The page engine: A4 size, margins, alignment variables, logo sizing, and printing.
+ * Templates style what is INSIDE .gc-page (see assets/css/templates/). They never
+ * set the page size or margins.
+ *
+ *   --gc-mx / --gc-my   margins in inches (set by the editor)
+ *   --gc-align          left | center | right
+ *   --gc-justify        flex-start | center | flex-end
+ *   --gc-logo-scale     logo size, 0.4 to 2 (set by ctx.logo())
+ *   --gc-logo-base      logo height at 100%, set by each template
+ */
+
+.page-frame {
+  position: relative;
+  flex: none;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: var(--page-shadow);
+}
+
+.gc-sheet {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  transform-origin: 0 0;
+  --gc-mx: 1;
+  --gc-my: 1;
+  --gc-align: center;
+  --gc-justify: center;
+}
+
+.gc-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: calc(var(--gc-my) * 1in) calc(var(--gc-mx) * 1in);
+  overflow: hidden;
+  background: #fff;
+  color: #111;
+  font-family: 'GC Cover', 'Book Antiqua', 'Palatino Linotype', Palatino, Georgia, serif;
+  font-size: 12pt;
+  line-height: 1.35;
+  text-align: left;
+  font-synthesis: none;
+}
+.gc-page *, .gc-page *::before, .gc-page *::after { box-sizing: border-box; }
+.gc-page :where(h1, h2, h3, p, ul, ol, table) { margin: 0; padding: 0; }
+
+/* Logo: the height comes from size, the width follows. Never stretched. */
+.gc-page .gc-logo { display: flex; width: 100%; }
+.gc-page .gc-logo img,
+.gc-page .gc-logo svg {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: calc(var(--gc-logo-base, 130px) * var(--gc-logo-scale, 1));
+  object-fit: contain;
+}
+
+/* Lorem ipsum stand-ins for fields that are still empty. */
+.gc-page .gc-dummy { color: #8b919b; }
+
+/* Margin guides while a margin slider is in use. */
+.gc-guides {
+  position: absolute;
+  inset: calc(var(--gc-my) * 1in) calc(var(--gc-mx) * 1in);
+  border: 1px dashed rgba(31, 122, 255, 0.85);
+  background: rgba(31, 122, 255, 0.04);
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.preview.show-guides .gc-guides { opacity: 1; }
+
+/* ── printing: exactly one A4 page, no app chrome, vector text ───────────── */
+@page { size: A4; margin: 0; }
+
+@media print {
+  html, body { height: auto !important; overflow: visible !important; background: #fff !important; }
+  .topbar, .editor, .toasts, .dialog, .gc-guides, .noscript { display: none !important; }
+  .app, .workspace, .preview { display: block !important; height: auto !important; padding: 0 !important; overflow: visible !important; background: #fff !important; }
+  .page-frame {
+    width: 210mm !important;
+    height: 296.6mm !important; /* a hair under 297mm so rounding never adds a blank page */
+    border-radius: 0;
+    box-shadow: none;
+    break-inside: avoid;
+    page-break-after: avoid;
+  }
+  .gc-sheet { transform: none !important; }
+  .gc-page .gc-dummy { visibility: hidden; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
