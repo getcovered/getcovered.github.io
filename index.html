@@ -2,23 +2,50 @@
 <html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <title>GetCovered — Cover pages for university assignments</title>
-    <meta name="description" content="Fill in a form, get a clean A4 cover page for your assignment. Free, private, and works in your browser." />
+    <meta
+      name="description"
+      content="Fill in a form, get a clean A4 cover page for your assignment. Free, private, and works in your browser."
+    />
     <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#0f1115" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="GetCovered" />
-    <meta property="og:description" content="Cover pages for university assignments. Free, private, and works in your browser." />
+    <meta
+      property="og:description"
+      content="Cover pages for university assignments. Free, private, and works in your browser."
+    />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
     />
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/instrument-sans/instrument-sans-latin-400-normal.woff2" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/instrument-sans/instrument-sans-latin-600-normal.woff2" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/instrument-sans/instrument-sans-latin-700-normal.woff2" crossorigin />
-    <link rel="preload" as="style" href="assets/css/templates/classic.css" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/instrument-sans/instrument-sans-latin-400-normal.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/instrument-sans/instrument-sans-latin-600-normal.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/instrument-sans/instrument-sans-latin-700-normal.woff2"
+      crossorigin
+    />
+    <link rel="preload" as="style" href="assets/css++/templates/classic.css" />
     <link rel="preload" as="image" href="assets/img/nsu.png" />
     <!-- Fetch every script at once instead of one after another. tests/run.mjs checks this list is complete. -->
     <link rel="modulepreload" href="assets/js/core/schema.js" />
@@ -53,48 +80,136 @@
   <body>
     <div id="splash" class="splash" aria-hidden="true">
       <svg class="splash-mark" viewBox="0 0 24 24" width="40" height="40">
-        <rect x="5" y="2.5" width="14" height="19" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
-        <path d="M8.5 7.5h7M8.5 11h7M8.5 14.5h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        <rect
+          x="5"
+          y="2.5"
+          width="14"
+          height="19"
+          rx="2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+        />
+        <path
+          d="M8.5 7.5h7M8.5 11h7M8.5 14.5h4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
       </svg>
     </div>
     <div id="app" class="app" data-editor="">
       <header class="topbar">
-        <button id="editor-toggle" class="icon-btn" type="button" aria-controls="editor" aria-expanded="true" aria-label="Hide editor" data-icon="panel"></button>
+        <button
+          id="editor-toggle"
+          class="icon-btn"
+          type="button"
+          aria-controls="editor"
+          aria-expanded="true"
+          aria-label="Hide editor"
+          data-icon="panel"
+        ></button>
         <a class="brand" href="./" aria-label="GetCovered home">
-          <svg class="brand-mark" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-            <rect x="5" y="2.5" width="14" height="19" rx="2" fill="none" stroke="currentColor" stroke-width="1.8" />
-            <path d="M8.5 7.5h7M8.5 11h7M8.5 14.5h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          <svg
+            class="brand-mark"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <rect
+              x="5"
+              y="2.5"
+              width="14"
+              height="19"
+              rx="2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M8.5 7.5h7M8.5 11h7M8.5 14.5h4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
           </svg>
           <span>GetCovered</span>
         </a>
-        <span id="save-status" class="status" role="status" aria-live="polite"></span>
+        <span
+          id="save-status"
+          class="status"
+          role="status"
+          aria-live="polite"
+        ></span>
         <div class="topbar-actions">
-          <button id="theme-btn" class="icon-btn" type="button" aria-label="Switch to light mode"></button>
-          <button id="open-btn" class="btn" type="button" aria-label="Open a .gtcv cover file">
+          <button
+            id="theme-btn"
+            class="icon-btn"
+            type="button"
+            aria-label="Switch to light mode"
+          ></button>
+          <button
+            id="open-btn"
+            class="btn"
+            type="button"
+            aria-label="Open a .gtcv cover file"
+          >
             <span data-icon="open"></span><span class="btn-label">Open</span>
           </button>
-          <button id="save-btn" class="btn" type="button" aria-label="Save as a .gtcv cover file">
+          <button
+            id="save-btn"
+            class="btn"
+            type="button"
+            aria-label="Save as a .gtcv cover file"
+          >
             <span data-icon="save"></span><span class="btn-label">Save</span>
           </button>
-          <button id="pdf-btn" class="btn btn-primary" type="button" aria-label="Download PDF">
-            <span data-icon="print"></span><span class="label-long">Download PDF</span><span class="label-short">PDF</span>
+          <button
+            id="pdf-btn"
+            class="btn btn-primary"
+            type="button"
+            aria-label="Download PDF"
+          >
+            <span data-icon="print"></span
+            ><span class="label-long">Download PDF</span
+            ><span class="label-short">PDF</span>
           </button>
         </div>
       </header>
 
       <main class="workspace">
         <aside id="editor" class="editor" aria-label="Cover editor">
-          <button id="sheet-handle" class="sheet-handle" type="button" aria-controls="editor-scroll" aria-expanded="true">
+          <button
+            id="sheet-handle"
+            class="sheet-handle"
+            type="button"
+            aria-controls="editor-scroll"
+            aria-expanded="true"
+          >
             <span class="grip" aria-hidden="true"></span>
             <span class="sheet-title">Edit your cover</span>
           </button>
           <div id="editor-scroll" class="editor-scroll">
             <div id="editor-mount"></div>
             <footer class="editor-foot">
-              <button id="reset-btn" class="btn btn-ghost btn-danger" type="button"><span data-icon="reset"></span>New cover</button>
+              <button
+                id="reset-btn"
+                class="btn btn-ghost btn-danger"
+                type="button"
+              >
+                <span data-icon="reset"></span>New cover
+              </button>
               <p>
                 GetCovered <span id="app-version"></span> ·
-                <a href="https://github.com/getcovered" target="_blank" rel="noopener">GitHub</a><br />
+                <a
+                  href="https://github.com/getcovered"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                ><br />
                 Your data stays on this device.
               </p>
             </footer>
@@ -112,8 +227,19 @@
       </main>
     </div>
 
-    <input id="file-input" class="visually-hidden" type="file" accept=".gtcv,.json,application/json" tabindex="-1" aria-hidden="true" />
+    <input
+      id="file-input"
+      class="visually-hidden"
+      type="file"
+      accept=".gtcv,.json,application/json"
+      tabindex="-1"
+      aria-hidden="true"
+    />
     <div id="toasts" class="toasts" aria-live="polite"></div>
-    <noscript><p class="noscript">GetCovered needs JavaScript to build your cover page.</p></noscript>
+    <noscript
+      ><p class="noscript">
+        GetCovered needs JavaScript to build your cover page.
+      </p></noscript
+    >
   </body>
 </html>
