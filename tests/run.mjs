@@ -369,7 +369,9 @@ test('startup: index.html preloads every script the app imports', async () => {
   seen.delete('app.js');
   const page = await read('index.html');
   const listed = new Set([...page.matchAll(/rel="modulepreload"\s+href="assets\/js\/([^"]+)"/g)].map((m) => m[1]));
-  const missing = [...seen].filter((f) => !listed.has(f));
+  // Template files are optional in the list so adding a template stays a two-file job plus the registry.
+  const optional = (f) => f.startsWith('templates/') && f !== 'templates/registry.js';
+  const missing = [...seen].filter((f) => !listed.has(f) && !optional(f));
   const extra = [...listed].filter((f) => !seen.has(f));
   assert.deepEqual(missing, [], `add to index.html as modulepreload: ${missing.join(', ')}`);
   assert.deepEqual(extra, [], `modulepreload for a script nothing imports: ${extra.join(', ')}`);

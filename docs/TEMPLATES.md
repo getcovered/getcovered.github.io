@@ -20,7 +20,9 @@ names it and tells you the line to paste.
    import myTemplate from './my-template.js';
    export const templates = [classic, myTemplate];
    ```
-   A template picker appears in the editor as soon as there is more than one.
+   A **Template** section appears at the top of the editor as soon as there is more than one.
+   (Optional speed-up: also add a `<link rel="modulepreload" href="assets/js/templates/my-template.js" />` line
+   next to the others in `index.html`. The app works without it.)
 5. Run `npm test`. Fix what it lists. Run `npm start` and look at it, including **Group** mode and the
    alignment and margin controls.
 

@@ -10,6 +10,7 @@ import { CONTROLS } from './controls.js';
 export function createEditor({ store, env, setGuides }) {
   const root = el('div', { class: 'sections' });
   const items = [];
+  const sections = [];
 
   for (const section of SECTIONS) {
     const body = el('div', { class: 'fields' });
@@ -40,15 +41,15 @@ export function createEditor({ store, env, setGuides }) {
       items.push({ field, wrap, control });
     }
 
-    root.append(
-      el(
-        'details',
-        { class: 'section', open: section.open },
-        el('summary', {}, el('span', { class: 'section-title', text: section.title }), icon('chevron')),
-        section.hint ? el('p', { class: 'section-hint', text: section.hint }) : null,
-        body,
-      ),
+    const details = el(
+      'details',
+      { class: 'section', open: section.open },
+      el('summary', {}, el('span', { class: 'section-title', text: section.title }), icon('chevron')),
+      section.hint ? el('p', { class: 'section-hint', text: section.hint }) : null,
+      body,
     );
+    sections.push({ details, body });
+    root.append(details);
   }
 
   return {
@@ -59,6 +60,8 @@ export function createEditor({ store, env, setGuides }) {
         if (meta.source !== field.path) control.sync(state);
         wrap.hidden = field.showIf ? !field.showIf(state, env) : false;
       }
+      // A section with nothing to show (for example Template, while there is one template) disappears.
+      for (const { details, body } of sections) details.hidden = [...body.children].every((c) => c.hidden);
     },
   };
 }

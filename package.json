@@ -1,6 +1,6 @@
 {
   "name": "getcovered",
-  "version": "2.0.0",
+  "version": "2.3.0",
   "description": "Cover pages for university assignments. Vanilla HTML, CSS and JS.",
   "private": true,
   "type": "module",

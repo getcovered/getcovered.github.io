@@ -23,7 +23,7 @@ section 1. You do not need to upload anything else.
    - save the first as `assets/js/templates/<id>.js`,
    - save the second as `assets/css/templates/<id>.css`,
    - add the registry lines it gives you to `assets/js/templates/registry.js`.
-5. Upload the changes to GitHub (or Cloudflare). A **Template** picker appears in the editor's *Page* section.
+5. Upload the changes to GitHub (or Cloudflare). A **Template** section appears at the top of the editor.
    If you can run `npm test`, it names anything the template missed. If you can't, ask the AI to re-check
    against section 7 and paste back what looks wrong.
 

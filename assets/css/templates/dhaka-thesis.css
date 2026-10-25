@@ -1,0 +1,128 @@
+/* Dhaka Thesis cover page layout and styling */
+
+.gc-page[data-template="dhaka-thesis"] {
+  --gc-logo-base: 82px;
+  line-height: 1.4;
+}
+
+/* Outer enclosing page frame */
+.gc-page[data-template="dhaka-thesis"] .dt-frame {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  border: 1.5px solid #111;
+  padding: 24px 28px 22px;
+  box-sizing: border-box;
+  text-align: var(--gc-align);
+}
+
+/* Header & University Info */
+.gc-page[data-template="dhaka-thesis"] .dt-header {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-logo-wrap {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-uni {
+  margin: 0;
+  font-size: 19pt;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  text-align: var(--gc-align);
+}
+.gc-page[data-template="dhaka-thesis"] .dt-course-title {
+  margin-top: 4px;
+  font-size: 13pt;
+  font-style: italic;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-course-meta {
+  margin-top: 3px;
+  font-size: 10pt;
+  color: #333;
+}
+
+/* Assignment / Thesis Title Block */
+.gc-page[data-template="dhaka-thesis"] .dt-work {
+  flex: none;
+  margin: 32px 0 28px;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-type {
+  font-size: 15pt;
+  font-style: italic;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-on {
+  margin: 4px 0 10px;
+  font-size: 12pt;
+  font-style: italic;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-title {
+  font-size: 15pt;
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+/* Submission details (To & By stacked) */
+.gc-page[data-template="dhaka-thesis"] .dt-details {
+  flex: 1 0 auto; /* never shrink below its content, so it cannot ride up over the title or down over the date */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-block {
+  width: 100%;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-label {
+  margin: 0 0 4px;
+  font-size: 12.5pt;
+  font-weight: 700;
+  text-align: var(--gc-align);
+}
+.gc-page[data-template="dhaka-thesis"] .dt-line {
+  font-size: 11pt;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-line.dt-name {
+  font-weight: 600;
+}
+
+/* Group members responsive multi-column layout */
+.gc-page[data-template="dhaka-thesis"] .dt-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 6px 14px;
+  margin-top: 6px;
+  justify-items: center;
+}
+.gc-page[data-template="dhaka-thesis"] .dt-member {
+  min-width: 0;
+}
+
+/* Submission Date Footer */
+.gc-page[data-template="dhaka-thesis"] .dt-footer {
+  flex: none;
+  margin-top: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: var(--gc-justify);
+}
+.gc-page[data-template="dhaka-thesis"] .dt-date {
+  font-size: 11.5pt;
+  text-align: var(--gc-align);
+}
+
+/* Print optimizations */
+@media print {
+  .gc-page[data-template="dhaka-thesis"] .dt-line:has(> .gc-dummy:only-child) {
+    display: none;
+  }
+}

@@ -23,6 +23,7 @@ export const DEFAULT_TEMPLATE_ID = 'classic';
 export const MAX_MEMBERS = 12;
 
 export const SECTIONS = [
+  { id: 'template', title: 'Template', hint: 'Choose the design of your cover. Everything you type carries over.', open: true },
   { id: 'logo', title: 'University and logo', hint: 'Pick the logo for the top of the cover, then set its size and position.', open: true },
   { id: 'assignment', title: 'Assignment', hint: 'What you are handing in.', open: true },
   { id: 'course', title: 'Course', hint: 'Shown in the strip under the title.' },
@@ -45,7 +46,7 @@ const LCR = [
 export const FIELDS = [
   // ─── app-level ───────────────────────────────────────────────────────────
   {
-    path: 'template', kind: 'meta', type: 'select', section: 'page',
+    path: 'template', kind: 'meta', type: 'select', section: 'template',
     label: 'Template', default: DEFAULT_TEMPLATE_ID, dynamicOptions: 'templates',
     showIf: (_s, env) => (env?.templates?.length ?? 0) > 1,
   },
