@@ -15,17 +15,24 @@ const JUSTIFY = { left: 'flex-start', center: 'center', right: 'flex-end' };
 const DEV = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
 
 export function createPreview({ stage, frame, sheet, page, universities }) {
-  const loaded = new Set();
+  const styled = new Map(); // template id -> promise that settles when its stylesheet has loaded
+  let current = null;
   let guideTimer = 0;
 
   function ensureCss(template) {
-    if (loaded.has(template.id)) return;
-    loaded.add(template.id);
-    document.head.append(
-      Object.assign(document.createElement('link'), {
-        rel: 'stylesheet',
-        href: template.css,
-        id: `gc-template-${template.id}`,
+    if (styled.has(template.id)) return;
+    styled.set(
+      template.id,
+      new Promise((resolve) => {
+        document.head.append(
+          Object.assign(document.createElement('link'), {
+            rel: 'stylesheet',
+            href: template.css,
+            id: `gc-template-${template.id}`,
+            onload: resolve,
+            onerror: resolve,
+          }),
+        );
       }),
     );
     if (DEV) {
@@ -40,6 +47,7 @@ export function createPreview({ stage, frame, sheet, page, universities }) {
 
   function render(state) {
     const template = getTemplate(state.template);
+    current = template.id;
     ensureCss(template);
 
     const { x, y } = effectiveMargins(state.page);
@@ -74,6 +82,11 @@ export function createPreview({ stage, frame, sheet, page, universities }) {
   return {
     render,
     fit,
+    /** Resolves once what is on the page looks finished: template CSS applied, images decoded. */
+    async whenReady() {
+      await styled.get(current);
+      await Promise.all([...page.querySelectorAll('img')].map((img) => img.decode?.().catch(() => {})));
+    },
     /** Dashed margin guides, shown while a margin slider is in use. */
     setGuides(on) {
       clearTimeout(guideTimer);

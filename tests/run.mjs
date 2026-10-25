@@ -17,6 +17,7 @@ import starter from '../assets/js/templates/_starter.js';
 import classic from '../assets/js/templates/classic.js';
 import { CONTROLS } from '../assets/js/ui/controls.js';
 import { buildFieldsDoc } from '../tools/gen-fields.mjs';
+import { buildBrief } from '../tools/gen-brief.mjs';
 import { APP } from '../assets/js/core/meta.js';
 
 const ENV = { universityIds: UNIVERSITIES.map((u) => u.id), templateIds: templates.map((t) => t.id) };
@@ -345,6 +346,33 @@ test('docs: FIELDS.md matches the schema (run `npm run docs`)', async () => {
   let current = '';
   try { current = await read('docs/FIELDS.md'); } catch { /* handled below */ }
   assert.equal(current.replace(/\r\n/g, '\n'), buildFieldsDoc(), 'docs/FIELDS.md is out of date. Run: npm run docs');
+});
+
+test('docs: TEMPLATE-BRIEF.md matches the schema and example templates (run `npm run docs`)', async () => {
+  let current = '';
+  try { current = await read('docs/TEMPLATE-BRIEF.md'); } catch { /* handled below */ }
+  assert.equal(current.replace(/\r\n/g, '\n'), await buildBrief(), 'docs/TEMPLATE-BRIEF.md is out of date. Run: npm run docs');
+});
+
+test('startup: index.html preloads every script the app imports', async () => {
+  const seen = new Set();
+  const walk = async (rel) => {
+    if (seen.has(rel)) return;
+    seen.add(rel);
+    const src = await read(`assets/js/${rel}`);
+    for (const m of src.matchAll(/(?:import|export)[^'"]*?from\s+['"](\.[^'"]+)['"]/g)) {
+      const next = new URL(m[1], new URL(`assets/js/${rel}`, ROOT)).pathname.split('/assets/js/')[1];
+      await walk(next);
+    }
+  };
+  await walk('app.js');
+  seen.delete('app.js');
+  const page = await read('index.html');
+  const listed = new Set([...page.matchAll(/rel="modulepreload"\s+href="assets\/js\/([^"]+)"/g)].map((m) => m[1]));
+  const missing = [...seen].filter((f) => !listed.has(f));
+  const extra = [...listed].filter((f) => !seen.has(f));
+  assert.deepEqual(missing, [], `add to index.html as modulepreload: ${missing.join(', ')}`);
+  assert.deepEqual(extra, [], `modulepreload for a script nothing imports: ${extra.join(', ')}`);
 });
 
 test('housekeeping: package and app versions agree', async () => {

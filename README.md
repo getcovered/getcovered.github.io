@@ -56,7 +56,7 @@ The editor, the `.gtcv` validation, the field docs and the template tests are al
 
 | I want to… | Do this |
 | --- | --- |
-| Add a **template** | Follow [docs/TEMPLATES.md](docs/TEMPLATES.md). It includes a ready-made prompt for an AI assistant. `npm test` tells you every field your template forgot. |
+| Add a **template** | Draw an SVG wireframe and give it, with [docs/TEMPLATE-BRIEF.md](docs/TEMPLATE-BRIEF.md), to any AI. Or write it yourself with [docs/TEMPLATES.md](docs/TEMPLATES.md). `npm test` tells you every field a template forgot. |
 | Add a **field** | Add one entry to `FIELDS` in `core/schema.js`, then `npm test` (it fails until every template renders the field) and `npm run docs`. |
 | Add a **university** | Add an entry to `assets/js/data/universities.js` and put its logo in `assets/img/`. |
 | Change the **file format** | See [docs/GTCV.md](docs/GTCV.md): bump the version and add a migration. |

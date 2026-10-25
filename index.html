@@ -17,6 +17,31 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link rel="preload" as="font" type="font/woff2" href="assets/fonts/instrument-sans/instrument-sans-latin-400-normal.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="assets/fonts/instrument-sans/instrument-sans-latin-600-normal.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/instrument-sans/instrument-sans-latin-700-normal.woff2" crossorigin />
+    <link rel="preload" as="style" href="assets/css/templates/classic.css" />
+    <link rel="preload" as="image" href="assets/img/nsu.png" />
+    <!-- Fetch every script at once instead of one after another. tests/run.mjs checks this list is complete. -->
+    <link rel="modulepreload" href="assets/js/core/schema.js" />
+    <link rel="modulepreload" href="assets/js/core/format.js" />
+    <link rel="modulepreload" href="assets/js/core/html.js" />
+    <link rel="modulepreload" href="assets/js/core/meta.js" />
+    <link rel="modulepreload" href="assets/js/core/model.js" />
+    <link rel="modulepreload" href="assets/js/core/store.js" />
+    <link rel="modulepreload" href="assets/js/core/gtcv.js" />
+    <link rel="modulepreload" href="assets/js/core/persist.js" />
+    <link rel="modulepreload" href="assets/js/core/context.js" />
+    <link rel="modulepreload" href="assets/js/core/contract.js" />
+    <link rel="modulepreload" href="assets/js/data/universities.js" />
+    <link rel="modulepreload" href="assets/js/templates/classic.js" />
+    <link rel="modulepreload" href="assets/js/templates/registry.js" />
+    <link rel="modulepreload" href="assets/js/ui/dom.js" />
+    <link rel="modulepreload" href="assets/js/ui/image.js" />
+    <link rel="modulepreload" href="assets/js/ui/controls.js" />
+    <link rel="modulepreload" href="assets/js/ui/editor.js" />
+    <link rel="modulepreload" href="assets/js/ui/preview.js" />
+    <link rel="modulepreload" href="assets/js/ui/sheet.js" />
+    <link rel="modulepreload" href="assets/js/ui/feedback.js" />
+    <link rel="modulepreload" href="assets/js/ui/export.js" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -25,6 +50,12 @@
     <script type="module" src="assets/js/app.js"></script>
   </head>
   <body>
+    <div id="splash" class="splash" aria-hidden="true">
+      <svg class="splash-mark" viewBox="0 0 24 24" width="40" height="40">
+        <rect x="5" y="2.5" width="14" height="19" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+        <path d="M8.5 7.5h7M8.5 11h7M8.5 14.5h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+      </svg>
+    </div>
     <div id="app" class="app" data-editor="">
       <header class="topbar">
         <button id="editor-toggle" class="icon-btn" type="button" aria-controls="editor" aria-expanded="true" aria-label="Hide editor" data-icon="panel"></button>

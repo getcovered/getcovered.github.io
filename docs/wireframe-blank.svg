@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" width="630" height="891" font-family="Arial, Helvetica, sans-serif">
+  <title>GetCovered blank wireframe (A4)</title>
+  <desc>
+    Draw your layout on this A4 page (210 x 297 mm). Put field names in curly braces, for example {course.code}.
+    Draw the logo as a dashed rectangle containing {logo}. Delete this note and the legend before you send it.
+  </desc>
+
+  <rect x="0" y="0" width="210" height="297" fill="#ffffff" stroke="#999999" stroke-width="0.3"/>
+
+  <!-- Default 1 inch (25.4 mm) margin guide. The AI ignores it; it only helps you draw. -->
+  <rect x="25.4" y="25.4" width="159.2" height="246.2" fill="none" stroke="#4a8cff" stroke-width="0.25" stroke-dasharray="2 1.5"/>
+
+  <!-- Logo example: delete or move. Its HEIGHT is the logo size at 100%. -->
+  <rect x="85" y="32" width="40" height="34" fill="none" stroke="#333333" stroke-width="0.3" stroke-dasharray="2 1.5"/>
+  <text x="105" y="50" font-size="4" text-anchor="middle" fill="#333333">{logo}</text>
+
+  <!-- Legend: remove before sending -->
+  <g font-size="3.2" fill="#555555">
+    <text x="27" y="240">LEGEND (delete this block)</text>
+    <text x="27" y="246">{field.name}  = where that field's text goes (list of names in the brief)</text>
+    <text x="27" y="251">dashed box with {logo} = the logo; its height sets the size</text>
+    <text x="27" y="256">plain words you write (e.g. "Submitted to:") are copied as they are</text>
+    <text x="27" y="261">blue dashed box = default margin; ignored, margins are user-adjustable</text>
+    <text x="27" y="266">add notes like "20px bold uppercase" next to any text to set its style</text>
+  </g>
+</svg>

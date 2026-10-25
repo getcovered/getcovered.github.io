@@ -5,3 +5,9 @@ try {
 } catch (e) {
   /* storage blocked: keep the default */
 }
+
+// Safety net: if the app has not shown itself after 8 seconds (very slow network, blocked script),
+// stop hiding the page so the person is never left looking at a splash screen.
+setTimeout(function () {
+  if (!document.documentElement.hasAttribute('data-ready')) document.documentElement.setAttribute('data-ready', 'late');
+}, 8000);

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" width="630" height="891" font-family="Georgia, 'Times New Roman', serif">
+  <title>Example wireframe: the Classic cover</title>
+  <desc>
+    Example of how to draw a wireframe for GetCovered. This one describes the built-in Classic layout.
+    Notes (small grey text on the right margin) are instructions, not page content.
+  </desc>
+
+  <rect x="0" y="0" width="210" height="297" fill="#ffffff" stroke="#999999" stroke-width="0.3"/>
+  <rect x="25.4" y="25.4" width="159.2" height="246.2" fill="none" stroke="#4a8cff" stroke-width="0.2" stroke-dasharray="2 1.5"/>
+
+  <!-- Logo: dashed box, height 34.4 mm (about 130 px) -->
+  <rect x="88" y="29" width="34" height="34.4" fill="none" stroke="#333333" stroke-width="0.3" stroke-dasharray="2 1.5"/>
+  <text x="105" y="47" font-size="4" text-anchor="middle" fill="#333333">{logo}</text>
+
+  <!-- Heading block, centred -->
+  <text x="105" y="80" font-size="5" font-weight="bold" text-anchor="middle">{assignment.type}</text>
+  <line x1="25.4" y1="85" x2="184.6" y2="85" stroke="#111111" stroke-width="0.4"/>
+  <text x="105" y="92" font-size="5.3" font-weight="bold" text-anchor="middle">{assignment.title}</text>
+  <line x1="25.4" y1="97" x2="184.6" y2="97" stroke="#111111" stroke-width="0.4"/>
+
+  <!-- Course strip: three columns with vertical rules, semester underneath -->
+  <text x="27" y="119" font-size="3.7" font-weight="bold">{course.code}</text>
+  <line x1="58" y1="113" x2="58" y2="122" stroke="#111111" stroke-width="0.4"/>
+  <text x="105" y="119" font-size="3.7" font-weight="bold" text-anchor="middle">{course.title}</text>
+  <line x1="148" y1="113" x2="148" y2="122" stroke="#111111" stroke-width="0.4"/>
+  <text x="183" y="119" font-size="3.2" font-weight="bold" text-anchor="end">SEC {course.section}</text>
+  <text x="105" y="128" font-size="3.7" font-weight="bold" text-anchor="middle">{submission.semester}</text>
+
+  <!-- Two halves split by a tall rule that reaches nearly to the date -->
+  <line x1="105" y1="145" x2="105" y2="248" stroke="#111111" stroke-width="0.4"/>
+
+  <text x="26" y="150" font-size="4.2" font-weight="bold">Submitted to:</text>
+  <text x="26" y="158" font-size="4.2">{faculty.name}</text>
+  <text x="26" y="164" font-size="4.2">{faculty.designation}</text>
+  <text x="26" y="170" font-size="4.2">{faculty.department}</text>
+  <text x="26" y="176" font-size="4.2">{university.name}</text>
+
+  <text x="110" y="150" font-size="4.2" font-weight="bold">Submitted by:</text>
+  <text x="110" y="158" font-size="4.2">{individual.name}</text>
+  <text x="110" y="164" font-size="4.2">{individual.id}</text>
+  <text x="110" y="170" font-size="4.2">{individual.department}</text>
+  <text x="110" y="176" font-size="4.2">{individual.extra}  (only if filled in)</text>
+  <text x="110" y="184" font-size="3.2" fill="#555555">Group mode: list {group.members} here instead,</text>
+  <text x="110" y="188" font-size="3.2" fill="#555555">one name line and one ID line per member.</text>
+  <text x="110" y="192" font-size="3.2" fill="#555555">Show {group.number} next to the section: SEC 7 / GRP 3</text>
+
+  <!-- Date at the bottom of the content area -->
+  <text x="105" y="262" font-size="4" text-anchor="middle">{submission.date}</text>
+
+  <!-- Notes (instructions for the AI, not page content) -->
+  <g font-size="2.6" fill="#777777" font-family="Arial, Helvetica, sans-serif">
+    <text x="187" y="80" transform="rotate(90 187 80)">type: 14pt bold uppercase</text>
+    <text x="193" y="92" transform="rotate(90 193 92)">title: 20px bold uppercase, between two 1.5px rules</text>
+    <text x="199" y="119" transform="rotate(90 199 119)">strip: 14px bold uppercase</text>
+    <text x="205" y="150" transform="rotate(90 205 150)">body: 12pt, line-height 1.6; keep date at the very bottom</text>
+  </g>
+</svg>

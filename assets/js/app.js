@@ -161,3 +161,21 @@ $('theme-btn').addEventListener('click', () => {
 paintTheme();
 
 $('app-version').textContent = `v${APP.version}`;
+
+// ── reveal ───────────────────────────────────────────────────────────────────
+// Everything stays hidden behind the splash until the first paint is final:
+// fonts, the template's CSS and the logo are in. A 2.5 s cap keeps a slow font from blocking.
+const settled = Promise.all([
+  preview.whenReady(),
+  document.fonts.load('400 15px "Instrument Sans"'),
+  document.fonts.load('600 15px "Instrument Sans"'),
+  document.fonts.load('700 15px "Instrument Sans"'),
+  document.fonts.load('12pt "GC Cover"'),
+  document.fonts.load('bold 12pt "GC Cover"'),
+]).catch(() => {});
+await Promise.race([settled, new Promise((resolve) => setTimeout(resolve, 2500))]);
+preview.fit();
+requestAnimationFrame(() => {
+  root.setAttribute('data-ready', '');
+  setTimeout(() => $('splash')?.remove(), 400);
+});
