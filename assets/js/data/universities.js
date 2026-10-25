@@ -147,64 +147,64 @@ export const UNIVERSITIES = [
           {
             department: "Department of Accounting",
             degrees: [
-              "Bachelor of Business Administration (BBA)",
-              "Master of Business Administration (MBA)",
+              "Bachelor of Business Administration in Accounting",
+              "Master of Business Administration in Accounting",
             ],
           },
           {
             department: "Department of Management",
             degrees: [
-              "Bachelor of Business Administration (BBA)",
-              "Master of Business Administration (MBA)",
+              "Bachelor of Business Administration in Management",
+              "Master of Business Administration in Management",
             ],
           },
           {
             department: "Department of Marketing",
             degrees: [
-              "Bachelor of Business Administration (BBA)",
-              "Master of Business Administration (MBA)",
+              "Bachelor of Business Administration in Marketing",
+              "Master of Business Administration in Marketing",
             ],
           },
           {
             department: "Department of Finance",
             degrees: [
-              "Bachelor of Business Administration (BBA)",
-              "Master of Business Administration (MBA)",
+              "Bachelor of Business Administration in Finance",
+              "Master of Business Administration in Finance",
             ],
           },
           {
             department: "Department of Banking and Insurance",
             degrees: [
-              "Bachelor of Business Administration (BBA)",
-              "Master of Business Administration (MBA)",
+              "Bachelor of Business Administration in Banking and Insurance",
+              "Master of Business Administration in Banking and Insurance",
             ],
           },
           {
             department: "Department of Management Information Systems (MIS)",
             degrees: [
-              "Bachelor of Business Administration (BBA)",
-              "Master of Business Administration (MBA)",
+              "Bachelor of Business Administration in Management Information Systems (MIS)",
+              "Master of Business Administration in Management Information Systems (MIS)",
             ],
           },
           {
             department: "Department of Tourism and Hospitality Management",
             degrees: [
-              "Bachelor of Business Administration (BBA)",
-              "Master of Business Administration (MBA)",
+              "Bachelor of Business Administration in Tourism and Hospitality Management",
+              "Master of Business Administration in Tourism and Hospitality Management",
             ],
           },
           {
             department: "Department of International Business",
             degrees: [
-              "Bachelor of Business Administration (BBA)",
-              "Master of Business Administration (MBA)",
+              "Bachelor of Business Administration in International Business",
+              "Master of Business Administration in International Business",
             ],
           },
           {
             department: "Department of Organization Strategy and Leadership",
             degrees: [
-              "Bachelor of Business Administration (BBA)",
-              "Master of Business Administration (MBA)",
+              "Bachelor of Business Administration in Organization Strategy and Leadership",
+              "Master of Business Administration in Organization Strategy and Leadership",
             ],
           },
         ],
@@ -215,36 +215,36 @@ export const UNIVERSITIES = [
           {
             department: "Department of Physics",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Physics",
+              "Master of Science in Physics",
             ],
           },
           {
             department: "Department of Mathematics",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Mathematics",
+              "Master of Science in Mathematics",
             ],
           },
           {
             department: "Department of Chemistry",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Chemistry",
+              "Master of Science in Chemistry",
             ],
           },
           {
             department: "Department of Applied Mathematics",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Applied Mathematics",
+              "Master of Science in Applied Mathematics",
             ],
           },
           {
             department: "Department of Statistics",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Statistics",
+              "Master of Science in Statistics",
             ],
           },
         ],
@@ -255,85 +255,85 @@ export const UNIVERSITIES = [
           {
             department: "Department of Economics",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Economics",
+              "Master of Social Science in Economics",
             ],
           },
           {
             department: "Department of Political Science",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Political Science",
+              "Master of Social Science in Political Science",
             ],
           },
           {
             department: "Department of International Relations",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in International Relations",
+              "Master of Social Science in International Relations",
             ],
           },
           {
             department: "Department of Sociology",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Sociology",
+              "Master of Social Science in Sociology",
             ],
           },
           {
             department: "Department of Mass Communication & Journalism",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Mass Communication & Journalism",
+              "Master of Social Science in Mass Communication & Journalism",
             ],
           },
           {
             department: "Department of Public Administration",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Public Administration",
+              "Master of Social Science in Public Administration",
             ],
           },
           {
             department: "Department of Anthropology",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Anthropology",
+              "Master of Social Science in Anthropology",
             ],
           },
           {
             department: "Department of Population Sciences",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Population Sciences",
+              "Master of Social Science in Population Sciences",
             ],
           },
           {
             department: "Department of Peace and Conflict Studies",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Peace and Conflict Studies",
+              "Master of Social Science in Peace and Conflict Studies",
             ],
           },
           {
             department: "Department of Women and Gender Studies",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Women and Gender Studies",
+              "Master of Social Science in Women and Gender Studies",
             ],
           },
           {
             department: "Department of Development Studies",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Development Studies",
+              "Master of Social Science in Development Studies",
             ],
           },
           {
             department: "Department of Criminology",
             degrees: [
-              "Bachelor of Social Science (B.S.S. Hons.)",
-              "Master of Social Science (M.S.S.)",
+              "Bachelor of Social Science in Criminology",
+              "Master of Social Science in Criminology",
             ],
           },
         ],
@@ -343,84 +343,129 @@ export const UNIVERSITIES = [
         items: [
           {
             department: "Department of Bangla",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: ["Bachelor of Arts in Bangla", "Master of Arts in Bangla"],
           },
           {
             department: "Department of English",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in English",
+              "Master of Arts in English",
+            ],
           },
           {
             department: "Department of History",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in History",
+              "Master of Arts in History",
+            ],
           },
           {
             department: "Department of Philosophy",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Philosophy",
+              "Master of Arts in Philosophy",
+            ],
           },
           {
             department: "Department of Arabic",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: ["Bachelor of Arts in Arabic", "Master of Arts in Arabic"],
           },
           {
             department: "Department of Islamic History & Culture",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Islamic History & Culture",
+              "Master of Arts in Islamic History & Culture",
+            ],
           },
           {
             department: "Department of Islamic Studies",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Islamic Studies",
+              "Master of Arts in Islamic Studies",
+            ],
           },
           {
             department: "Department of Linguistics",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Linguistics",
+              "Master of Arts in Linguistics",
+            ],
           },
           {
             department: "Department of Persian Language and Literature",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Persian Language and Literature",
+              "Master of Arts in Persian Language and Literature",
+            ],
           },
           {
             department: "Department of Urdu",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: ["Bachelor of Arts in Urdu", "Master of Arts in Urdu"],
           },
           {
             department: "Department of Sanskrit",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Sanskrit",
+              "Master of Arts in Sanskrit",
+            ],
           },
           {
             department: "Department of Pali and Buddhist Studies",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Pali and Buddhist Studies",
+              "Master of Arts in Pali and Buddhist Studies",
+            ],
           },
           {
             department: "Department of Theatre and Performance Studies",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Theatre and Performance Studies",
+              "Master of Arts in Theatre and Performance Studies",
+            ],
           },
           {
             department: "Department of Music",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: ["Bachelor of Arts in Music", "Master of Arts in Music"],
           },
           {
             department: "Department of World Religions and Culture",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in World Religions and Culture",
+              "Master of Arts in World Religions and Culture",
+            ],
           },
           {
             department:
               "Department of Information Science and Library Management",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Information Science and Library Management",
+              "Master of Arts in Information Science and Library Management",
+            ],
           },
           {
             department: "Department of Dance",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: ["Bachelor of Arts in Dance", "Master of Arts in Dance"],
           },
           {
             department: "Department of Printing and Publication Studies",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Printing and Publication Studies",
+              "Master of Arts in Printing and Publication Studies",
+            ],
           },
           {
             department: "Department of Television, Film and Photography",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Television, Film and Photography",
+              "Master of Arts in Television, Film and Photography",
+            ],
           },
           {
             department: "Department of Japanese Studies",
-            degrees: ["Bachelor of Arts (B.A. Hons.)", "Master of Arts (M.A.)"],
+            degrees: [
+              "Bachelor of Arts in Japanese Studies",
+              "Master of Arts in Japanese Studies",
+            ],
           },
         ],
       },
@@ -430,37 +475,37 @@ export const UNIVERSITIES = [
           {
             department: "Department of Computer Science and Engineering",
             degrees: [
-              "Bachelor of Science (B.Sc. in CSE)",
-              "Master of Science (M.Sc. in CSE)",
+              "Bachelor of Science in Computer Science and Engineering",
+              "Master of Science in Computer Science and Engineering",
             ],
           },
           {
             department: "Department of Electrical and Electronic Engineering",
             degrees: [
-              "Bachelor of Science (B.Sc. in EEE)",
-              "Master of Science (M.Sc. in EEE)",
+              "Bachelor of Science in Electrical and Electronic Engineering",
+              "Master of Science in Electrical and Electronic Engineering",
             ],
           },
           {
             department:
               "Department of Applied Chemistry & Chemical Engineering",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Applied Chemistry & Chemical Engineering",
+              "Master of Science in Applied Chemistry & Chemical Engineering",
             ],
           },
           {
             department: "Department of Nuclear Engineering",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Nuclear Engineering",
+              "Master of Science in Nuclear Engineering",
             ],
           },
           {
             department: "Department of Robotics and Mechatronics Engineering",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Robotics and Mechatronics Engineering",
+              "Master of Science in Robotics and Mechatronics Engineering",
             ],
           },
         ],
@@ -471,50 +516,50 @@ export const UNIVERSITIES = [
           {
             department: "Department of Botany",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Botany",
+              "Master of Science in Botany",
             ],
           },
           {
             department: "Department of Zoology",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Zoology",
+              "Master of Science in Zoology",
             ],
           },
           {
             department: "Department of Biochemistry and Molecular Biology",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Biochemistry and Molecular Biology",
+              "Master of Science in Biochemistry and Molecular Biology",
             ],
           },
           {
             department: "Department of Microbiology",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Microbiology",
+              "Master of Science in Microbiology",
             ],
           },
           {
             department: "Department of Fisheries",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Fisheries",
+              "Master of Science in Fisheries",
             ],
           },
           {
             department: "Department of Psychology",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.) / B.S.S.",
-              "Master of Science (M.Sc.) / M.S.S.",
+              "Bachelor of Science in Psychology",
+              "Master of Science in Psychology",
             ],
           },
           {
             department: "Department of Genetic Engineering and Biotechnology",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Genetic Engineering and Biotechnology",
+              "Master of Science in Genetic Engineering and Biotechnology",
             ],
           },
         ],
@@ -525,29 +570,29 @@ export const UNIVERSITIES = [
           {
             department: "Department of Pharmacy",
             degrees: [
-              "Bachelor of Pharmacy (B.Pharm. Hons.)",
-              "Master of Pharmacy (M.Pharm.)",
+              "Bachelor of Pharmacy in Pharmacy",
+              "Master of Pharmacy in Pharmacy",
             ],
           },
           {
             department: "Department of Pharmaceutical Chemistry",
             degrees: [
-              "Bachelor of Pharmacy (B.Pharm. Hons.)",
-              "Master of Pharmacy (M.Pharm.)",
+              "Bachelor of Pharmacy in Pharmaceutical Chemistry",
+              "Master of Pharmacy in Pharmaceutical Chemistry",
             ],
           },
           {
             department: "Department of Clinical Pharmacy and Pharmacology",
             degrees: [
-              "Bachelor of Pharmacy (B.Pharm. Hons.)",
-              "Master of Pharmacy (M.Pharm.)",
+              "Bachelor of Pharmacy in Clinical Pharmacy and Pharmacology",
+              "Master of Pharmacy in Clinical Pharmacy and Pharmacology",
             ],
           },
           {
             department: "Department of Pharmaceutical Technology",
             degrees: [
-              "Bachelor of Pharmacy (B.Pharm. Hons.)",
-              "Master of Pharmacy (M.Pharm.)",
+              "Bachelor of Pharmacy in Pharmaceutical Technology",
+              "Master of Pharmacy in Pharmaceutical Technology",
             ],
           },
         ],
@@ -558,43 +603,43 @@ export const UNIVERSITIES = [
           {
             department: "Department of Geography & Environment",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.) / B.S.S.",
-              "Master of Science (M.Sc.) / M.S.S.",
+              "Bachelor of Science in Geography & Environment",
+              "Master of Science in Geography & Environment",
             ],
           },
           {
             department: "Department of Geology",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Geology",
+              "Master of Science in Geology",
             ],
           },
           {
             department: "Department of Soil, Water & Environment",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Soil, Water & Environment",
+              "Master of Science in Soil, Water & Environment",
             ],
           },
           {
             department: "Department of Oceanography",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Oceanography",
+              "Master of Science in Oceanography",
             ],
           },
           {
             department: "Department of Disaster Science and Climate Resilience",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Disaster Science and Climate Resilience",
+              "Master of Science in Disaster Science and Climate Resilience",
             ],
           },
           {
             department: "Department of Meteorology",
             degrees: [
-              "Bachelor of Science (B.Sc. Hons.)",
-              "Master of Science (M.Sc.)",
+              "Bachelor of Science in Meteorology",
+              "Master of Science in Meteorology",
             ],
           },
         ],
@@ -604,10 +649,7 @@ export const UNIVERSITIES = [
         items: [
           {
             department: "Department of Law",
-            degrees: [
-              "Bachelor of Laws (LL.B. Hons.)",
-              "Master of Laws (LL.M.)",
-            ],
+            degrees: ["Bachelor of Laws in Law", "Master of Laws in Law"],
           },
         ],
       },
@@ -617,50 +659,50 @@ export const UNIVERSITIES = [
           {
             department: "Department of Drawing and Painting",
             degrees: [
-              "Bachelor of Fine Art (B.F.A. Hons.)",
-              "Master of Fine Art (M.F.A.)",
+              "Bachelor of Fine Art in Drawing and Painting",
+              "Master of Fine Art in Drawing and Painting",
             ],
           },
           {
             department: "Department of Graphic Design",
             degrees: [
-              "Bachelor of Fine Art (B.F.A. Hons.)",
-              "Master of Fine Art (M.F.A.)",
+              "Bachelor of Fine Art in Graphic Design",
+              "Master of Fine Art in Graphic Design",
             ],
           },
           {
             department: "Department of Printmaking",
             degrees: [
-              "Bachelor of Fine Art (B.F.A. Hons.)",
-              "Master of Fine Art (M.F.A.)",
+              "Bachelor of Fine Art in Printmaking",
+              "Master of Fine Art in Printmaking",
             ],
           },
           {
-            department: "Department_of Oriental Art",
+            department: "Department of Oriental Art",
             degrees: [
-              "Bachelor of Fine Art (B.F.A. Hons.)",
-              "Master of Fine Art (M.F.A.)",
+              "Bachelor of Fine Art in Oriental Art",
+              "Master of Fine Art in Oriental Art",
             ],
           },
           {
             department: "Department of Sculpture",
             degrees: [
-              "Bachelor of Fine Art (B.F.A. Hons.)",
-              "Master of Fine Art (M.F.A.)",
+              "Bachelor of Fine Art in Sculpture",
+              "Master of Fine Art in Sculpture",
             ],
           },
           {
             department: "Department of Craft",
             degrees: [
-              "Bachelor of Fine Art (B.F.A. Hons.)",
-              "Master of Fine Art (M.F.A.)",
+              "Bachelor of Fine Art in Craft",
+              "Master of Fine Art in Craft",
             ],
           },
           {
             department: "Department of Art History",
             degrees: [
-              "Bachelor of Fine Art (B.F.A. Hons.)",
-              "Master of Fine Art (M.F.A.)",
+              "Bachelor of Fine Art in Art History",
+              "Master of Fine Art in Art History",
             ],
           },
         ],
