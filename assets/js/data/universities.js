@@ -145,64 +145,64 @@ export const UNIVERSITIES = [
         group: "Faculty of Business Studies",
         items: [
           {
-            department: "Department of Accounting",
-            degrees: [
+            group: "Department of Accounting",
+            items: [
               "Bachelor of Business Administration in Accounting",
               "Master of Business Administration in Accounting",
             ],
           },
           {
-            department: "Department of Management",
-            degrees: [
+            group: "Department of Management",
+            items: [
               "Bachelor of Business Administration in Management",
               "Master of Business Administration in Management",
             ],
           },
           {
-            department: "Department of Marketing",
-            degrees: [
+            group: "Department of Marketing",
+            items: [
               "Bachelor of Business Administration in Marketing",
               "Master of Business Administration in Marketing",
             ],
           },
           {
-            department: "Department of Finance",
-            degrees: [
+            group: "Department of Finance",
+            items: [
               "Bachelor of Business Administration in Finance",
               "Master of Business Administration in Finance",
             ],
           },
           {
-            department: "Department of Banking and Insurance",
-            degrees: [
+            group: "Department of Banking and Insurance",
+            items: [
               "Bachelor of Business Administration in Banking and Insurance",
               "Master of Business Administration in Banking and Insurance",
             ],
           },
           {
-            department: "Department of Management Information Systems (MIS)",
-            degrees: [
+            group: "Department of Management Information Systems (MIS)",
+            items: [
               "Bachelor of Business Administration in Management Information Systems (MIS)",
               "Master of Business Administration in Management Information Systems (MIS)",
             ],
           },
           {
-            department: "Department of Tourism and Hospitality Management",
-            degrees: [
+            group: "Department of Tourism and Hospitality Management",
+            items: [
               "Bachelor of Business Administration in Tourism and Hospitality Management",
               "Master of Business Administration in Tourism and Hospitality Management",
             ],
           },
           {
-            department: "Department of International Business",
-            degrees: [
+            group: "Department of International Business",
+            items: [
               "Bachelor of Business Administration in International Business",
               "Master of Business Administration in International Business",
             ],
           },
           {
-            department: "Department of Organization Strategy and Leadership",
-            degrees: [
+            group: "Department of Organization Strategy and Leadership",
+            items: [
               "Bachelor of Business Administration in Organization Strategy and Leadership",
               "Master of Business Administration in Organization Strategy and Leadership",
             ],
@@ -213,36 +213,36 @@ export const UNIVERSITIES = [
         group: "Faculty of Science",
         items: [
           {
-            department: "Department of Physics",
-            degrees: [
+            group: "Department of Physics",
+            items: [
               "Bachelor of Science in Physics",
               "Master of Science in Physics",
             ],
           },
           {
-            department: "Department of Mathematics",
-            degrees: [
+            group: "Department of Mathematics",
+            items: [
               "Bachelor of Science in Mathematics",
               "Master of Science in Mathematics",
             ],
           },
           {
-            department: "Department of Chemistry",
-            degrees: [
+            group: "Department of Chemistry",
+            items: [
               "Bachelor of Science in Chemistry",
               "Master of Science in Chemistry",
             ],
           },
           {
-            department: "Department of Applied Mathematics",
-            degrees: [
+            group: "Department of Applied Mathematics",
+            items: [
               "Bachelor of Science in Applied Mathematics",
               "Master of Science in Applied Mathematics",
             ],
           },
           {
-            department: "Department of Statistics",
-            degrees: [
+            group: "Department of Statistics",
+            items: [
               "Bachelor of Science in Statistics",
               "Master of Science in Statistics",
             ],
@@ -253,85 +253,85 @@ export const UNIVERSITIES = [
         group: "Faculty of Social Sciences",
         items: [
           {
-            department: "Department of Economics",
-            degrees: [
+            group: "Department of Economics",
+            items: [
               "Bachelor of Social Science in Economics",
               "Master of Social Science in Economics",
             ],
           },
           {
-            department: "Department of Political Science",
-            degrees: [
+            group: "Department of Political Science",
+            items: [
               "Bachelor of Social Science in Political Science",
               "Master of Social Science in Political Science",
             ],
           },
           {
-            department: "Department of International Relations",
-            degrees: [
+            group: "Department of International Relations",
+            items: [
               "Bachelor of Social Science in International Relations",
               "Master of Social Science in International Relations",
             ],
           },
           {
-            department: "Department of Sociology",
-            degrees: [
+            group: "Department of Sociology",
+            items: [
               "Bachelor of Social Science in Sociology",
               "Master of Social Science in Sociology",
             ],
           },
           {
-            department: "Department of Mass Communication & Journalism",
-            degrees: [
+            group: "Department of Mass Communication & Journalism",
+            items: [
               "Bachelor of Social Science in Mass Communication & Journalism",
               "Master of Social Science in Mass Communication & Journalism",
             ],
           },
           {
-            department: "Department of Public Administration",
-            degrees: [
+            group: "Department of Public Administration",
+            items: [
               "Bachelor of Social Science in Public Administration",
               "Master of Social Science in Public Administration",
             ],
           },
           {
-            department: "Department of Anthropology",
-            degrees: [
+            group: "Department of Anthropology",
+            items: [
               "Bachelor of Social Science in Anthropology",
               "Master of Social Science in Anthropology",
             ],
           },
           {
-            department: "Department of Population Sciences",
-            degrees: [
+            group: "Department of Population Sciences",
+            items: [
               "Bachelor of Social Science in Population Sciences",
               "Master of Social Science in Population Sciences",
             ],
           },
           {
-            department: "Department of Peace and Conflict Studies",
-            degrees: [
+            group: "Department of Peace and Conflict Studies",
+            items: [
               "Bachelor of Social Science in Peace and Conflict Studies",
               "Master of Social Science in Peace and Conflict Studies",
             ],
           },
           {
-            department: "Department of Women and Gender Studies",
-            degrees: [
+            group: "Department of Women and Gender Studies",
+            items: [
               "Bachelor of Social Science in Women and Gender Studies",
               "Master of Social Science in Women and Gender Studies",
             ],
           },
           {
-            department: "Department of Development Studies",
-            degrees: [
+            group: "Department of Development Studies",
+            items: [
               "Bachelor of Social Science in Development Studies",
               "Master of Social Science in Development Studies",
             ],
           },
           {
-            department: "Department of Criminology",
-            degrees: [
+            group: "Department of Criminology",
+            items: [
               "Bachelor of Social Science in Criminology",
               "Master of Social Science in Criminology",
             ],
@@ -342,127 +342,120 @@ export const UNIVERSITIES = [
         group: "Faculty of Arts",
         items: [
           {
-            department: "Department of Bangla",
-            degrees: ["Bachelor of Arts in Bangla", "Master of Arts in Bangla"],
+            group: "Department of Bangla",
+            items: ["Bachelor of Arts in Bangla", "Master of Arts in Bangla"],
           },
           {
-            department: "Department of English",
-            degrees: [
-              "Bachelor of Arts in English",
-              "Master of Arts in English",
-            ],
+            group: "Department of English",
+            items: ["Bachelor of Arts in English", "Master of Arts in English"],
           },
           {
-            department: "Department of History",
-            degrees: [
-              "Bachelor of Arts in History",
-              "Master of Arts in History",
-            ],
+            group: "Department of History",
+            items: ["Bachelor of Arts in History", "Master of Arts in History"],
           },
           {
-            department: "Department of Philosophy",
-            degrees: [
+            group: "Department of Philosophy",
+            items: [
               "Bachelor of Arts in Philosophy",
               "Master of Arts in Philosophy",
             ],
           },
           {
-            department: "Department of Arabic",
-            degrees: ["Bachelor of Arts in Arabic", "Master of Arts in Arabic"],
+            group: "Department of Arabic",
+            items: ["Bachelor of Arts in Arabic", "Master of Arts in Arabic"],
           },
           {
-            department: "Department of Islamic History & Culture",
-            degrees: [
+            group: "Department of Islamic History & Culture",
+            items: [
               "Bachelor of Arts in Islamic History & Culture",
               "Master of Arts in Islamic History & Culture",
             ],
           },
           {
-            department: "Department of Islamic Studies",
-            degrees: [
+            group: "Department of Islamic Studies",
+            items: [
               "Bachelor of Arts in Islamic Studies",
               "Master of Arts in Islamic Studies",
             ],
           },
           {
-            department: "Department of Linguistics",
-            degrees: [
+            group: "Department of Linguistics",
+            items: [
               "Bachelor of Arts in Linguistics",
               "Master of Arts in Linguistics",
             ],
           },
           {
-            department: "Department of Persian Language and Literature",
-            degrees: [
+            group: "Department of Persian Language and Literature",
+            items: [
               "Bachelor of Arts in Persian Language and Literature",
               "Master of Arts in Persian Language and Literature",
             ],
           },
           {
-            department: "Department of Urdu",
-            degrees: ["Bachelor of Arts in Urdu", "Master of Arts in Urdu"],
+            group: "Department of Urdu",
+            items: ["Bachelor of Arts in Urdu", "Master of Arts in Urdu"],
           },
           {
-            department: "Department of Sanskrit",
-            degrees: [
+            group: "Department of Sanskrit",
+            items: [
               "Bachelor of Arts in Sanskrit",
               "Master of Arts in Sanskrit",
             ],
           },
           {
-            department: "Department of Pali and Buddhist Studies",
-            degrees: [
+            group: "Department of Pali and Buddhist Studies",
+            items: [
               "Bachelor of Arts in Pali and Buddhist Studies",
               "Master of Arts in Pali and Buddhist Studies",
             ],
           },
           {
-            department: "Department of Theatre and Performance Studies",
-            degrees: [
+            group: "Department of Theatre and Performance Studies",
+            items: [
               "Bachelor of Arts in Theatre and Performance Studies",
               "Master of Arts in Theatre and Performance Studies",
             ],
           },
           {
-            department: "Department of Music",
-            degrees: ["Bachelor of Arts in Music", "Master of Arts in Music"],
+            group: "Department of Music",
+            items: ["Bachelor of Arts in Music", "Master of Arts in Music"],
           },
           {
-            department: "Department of World Religions and Culture",
-            degrees: [
+            group: "Department of World Religions and Culture",
+            items: [
               "Bachelor of Arts in World Religions and Culture",
               "Master of Arts in World Religions and Culture",
             ],
           },
           {
-            department:
-              "Department of Information Science and Library Management",
-            degrees: [
+            group: "Department of Information Science and Library Management",
+            items: [
               "Bachelor of Arts in Information Science and Library Management",
               "Master of Arts in Information Science and Library Management",
             ],
           },
           {
-            department: "Department of Dance",
-            degrees: ["Bachelor of Arts in Dance", "Master of Arts in Dance"],
+            group: "Department of Dance",
+            items: ["Bachelor of Arts in Dance", "Master of Arts in Dance"],
           },
           {
-            department: "Department of Printing and Publication Studies",
-            degrees: [
+            group: "Department of Printing and Publication Studies",
+            items: [
               "Bachelor of Arts in Printing and Publication Studies",
               "Master of Arts in Printing and Publication Studies",
             ],
           },
           {
-            department: "Department of Television, Film and Photography",
-            degrees: [
+            group: "Department of Television, Film and Photography",
+            items: [
               "Bachelor of Arts in Television, Film and Photography",
               "Master of Arts in Television, Film and Photography",
             ],
           },
           {
-            department: "Department of Japanese Studies",
-            degrees: [
+            group: "Department of Japanese Studies",
+            items: [
               "Bachelor of Arts in Japanese Studies",
               "Master of Arts in Japanese Studies",
             ],
@@ -473,37 +466,36 @@ export const UNIVERSITIES = [
         group: "Faculty of Engineering and Technology",
         items: [
           {
-            department: "Department of Computer Science and Engineering",
-            degrees: [
+            group: "Department of Computer Science and Engineering",
+            items: [
               "Bachelor of Science in Computer Science and Engineering",
               "Master of Science in Computer Science and Engineering",
             ],
           },
           {
-            department: "Department of Electrical and Electronic Engineering",
-            degrees: [
+            group: "Department of Electrical and Electronic Engineering",
+            items: [
               "Bachelor of Science in Electrical and Electronic Engineering",
               "Master of Science in Electrical and Electronic Engineering",
             ],
           },
           {
-            department:
-              "Department of Applied Chemistry & Chemical Engineering",
-            degrees: [
+            group: "Department of Applied Chemistry & Chemical Engineering",
+            items: [
               "Bachelor of Science in Applied Chemistry & Chemical Engineering",
               "Master of Science in Applied Chemistry & Chemical Engineering",
             ],
           },
           {
-            department: "Department of Nuclear Engineering",
-            degrees: [
+            group: "Department of Nuclear Engineering",
+            items: [
               "Bachelor of Science in Nuclear Engineering",
               "Master of Science in Nuclear Engineering",
             ],
           },
           {
-            department: "Department of Robotics and Mechatronics Engineering",
-            degrees: [
+            group: "Department of Robotics and Mechatronics Engineering",
+            items: [
               "Bachelor of Science in Robotics and Mechatronics Engineering",
               "Master of Science in Robotics and Mechatronics Engineering",
             ],
@@ -514,50 +506,50 @@ export const UNIVERSITIES = [
         group: "Faculty of Biological Sciences",
         items: [
           {
-            department: "Department of Botany",
-            degrees: [
+            group: "Department of Botany",
+            items: [
               "Bachelor of Science in Botany",
               "Master of Science in Botany",
             ],
           },
           {
-            department: "Department of Zoology",
-            degrees: [
+            group: "Department of Zoology",
+            items: [
               "Bachelor of Science in Zoology",
               "Master of Science in Zoology",
             ],
           },
           {
-            department: "Department of Biochemistry and Molecular Biology",
-            degrees: [
+            group: "Department of Biochemistry and Molecular Biology",
+            items: [
               "Bachelor of Science in Biochemistry and Molecular Biology",
               "Master of Science in Biochemistry and Molecular Biology",
             ],
           },
           {
-            department: "Department of Microbiology",
-            degrees: [
+            group: "Department of Microbiology",
+            items: [
               "Bachelor of Science in Microbiology",
               "Master of Science in Microbiology",
             ],
           },
           {
-            department: "Department of Fisheries",
-            degrees: [
+            group: "Department of Fisheries",
+            items: [
               "Bachelor of Science in Fisheries",
               "Master of Science in Fisheries",
             ],
           },
           {
-            department: "Department of Psychology",
-            degrees: [
+            group: "Department of Psychology",
+            items: [
               "Bachelor of Science in Psychology",
               "Master of Science in Psychology",
             ],
           },
           {
-            department: "Department of Genetic Engineering and Biotechnology",
-            degrees: [
+            group: "Department of Genetic Engineering and Biotechnology",
+            items: [
               "Bachelor of Science in Genetic Engineering and Biotechnology",
               "Master of Science in Genetic Engineering and Biotechnology",
             ],
@@ -568,29 +560,29 @@ export const UNIVERSITIES = [
         group: "Faculty of Pharmacy",
         items: [
           {
-            department: "Department of Pharmacy",
-            degrees: [
+            group: "Department of Pharmacy",
+            items: [
               "Bachelor of Pharmacy in Pharmacy",
               "Master of Pharmacy in Pharmacy",
             ],
           },
           {
-            department: "Department of Pharmaceutical Chemistry",
-            degrees: [
+            group: "Department of Pharmaceutical Chemistry",
+            items: [
               "Bachelor of Pharmacy in Pharmaceutical Chemistry",
               "Master of Pharmacy in Pharmaceutical Chemistry",
             ],
           },
           {
-            department: "Department of Clinical Pharmacy and Pharmacology",
-            degrees: [
+            group: "Department of Clinical Pharmacy and Pharmacology",
+            items: [
               "Bachelor of Pharmacy in Clinical Pharmacy and Pharmacology",
               "Master of Pharmacy in Clinical Pharmacy and Pharmacology",
             ],
           },
           {
-            department: "Department of Pharmaceutical Technology",
-            degrees: [
+            group: "Department of Pharmaceutical Technology",
+            items: [
               "Bachelor of Pharmacy in Pharmaceutical Technology",
               "Master of Pharmacy in Pharmaceutical Technology",
             ],
@@ -601,43 +593,43 @@ export const UNIVERSITIES = [
         group: "Faculty of Earth and Environmental Sciences",
         items: [
           {
-            department: "Department of Geography & Environment",
-            degrees: [
+            group: "Department of Geography & Environment",
+            items: [
               "Bachelor of Science in Geography & Environment",
               "Master of Science in Geography & Environment",
             ],
           },
           {
-            department: "Department of Geology",
-            degrees: [
+            group: "Department of Geology",
+            items: [
               "Bachelor of Science in Geology",
               "Master of Science in Geology",
             ],
           },
           {
-            department: "Department of Soil, Water & Environment",
-            degrees: [
+            group: "Department of Soil, Water & Environment",
+            items: [
               "Bachelor of Science in Soil, Water & Environment",
               "Master of Science in Soil, Water & Environment",
             ],
           },
           {
-            department: "Department of Oceanography",
-            degrees: [
+            group: "Department of Oceanography",
+            items: [
               "Bachelor of Science in Oceanography",
               "Master of Science in Oceanography",
             ],
           },
           {
-            department: "Department of Disaster Science and Climate Resilience",
-            degrees: [
+            group: "Department of Disaster Science and Climate Resilience",
+            items: [
               "Bachelor of Science in Disaster Science and Climate Resilience",
               "Master of Science in Disaster Science and Climate Resilience",
             ],
           },
           {
-            department: "Department of Meteorology",
-            degrees: [
+            group: "Department of Meteorology",
+            items: [
               "Bachelor of Science in Meteorology",
               "Master of Science in Meteorology",
             ],
@@ -648,8 +640,8 @@ export const UNIVERSITIES = [
         group: "Faculty of Law",
         items: [
           {
-            department: "Department of Law",
-            degrees: ["Bachelor of Laws in Law", "Master of Laws in Law"],
+            group: "Department of Law",
+            items: ["Bachelor of Laws in Law", "Master of Laws in Law"],
           },
         ],
       },
@@ -657,50 +649,50 @@ export const UNIVERSITIES = [
         group: "Faculty of Fine Art",
         items: [
           {
-            department: "Department of Drawing and Painting",
-            degrees: [
+            group: "Department of Drawing and Painting",
+            items: [
               "Bachelor of Fine Art in Drawing and Painting",
               "Master of Fine Art in Drawing and Painting",
             ],
           },
           {
-            department: "Department of Graphic Design",
-            degrees: [
+            group: "Department of Graphic Design",
+            items: [
               "Bachelor of Fine Art in Graphic Design",
               "Master of Fine Art in Graphic Design",
             ],
           },
           {
-            department: "Department of Printmaking",
-            degrees: [
+            group: "Department of Printmaking",
+            items: [
               "Bachelor of Fine Art in Printmaking",
               "Master of Fine Art in Printmaking",
             ],
           },
           {
-            department: "Department of Oriental Art",
-            degrees: [
+            group: "Department of Oriental Art",
+            items: [
               "Bachelor of Fine Art in Oriental Art",
               "Master of Fine Art in Oriental Art",
             ],
           },
           {
-            department: "Department of Sculpture",
-            degrees: [
+            group: "Department of Sculpture",
+            items: [
               "Bachelor of Fine Art in Sculpture",
               "Master of Fine Art in Sculpture",
             ],
           },
           {
-            department: "Department of Craft",
-            degrees: [
+            group: "Department of Craft",
+            items: [
               "Bachelor of Fine Art in Craft",
               "Master of Fine Art in Craft",
             ],
           },
           {
-            department: "Department of Art History",
-            degrees: [
+            group: "Department of Art History",
+            items: [
               "Bachelor of Fine Art in Art History",
               "Master of Fine Art in Art History",
             ],
