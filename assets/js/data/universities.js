@@ -267,6 +267,89 @@ export const UNIVERSITIES = [
       },
     ],
   },
+  {
+    id: "bau",
+    name: "Bangladesh Agricultural University",
+    short: "BAU",
+    logo: "assets/img/bau.svg",
+    departments: [
+      {
+        group: "Faculty of Veterinary Science",
+        items: [
+          "Department of Anatomy and Histology",
+          "Department of Microbiology and Hygiene",
+          "Department of Physiology",
+          "Department of Pharmacology",
+          "Department of Parasitology",
+          "Department of Pathology",
+          "Department of Medicine",
+          "Department of Surgery and Obstetrics",
+        ],
+      },
+      {
+        group: "Faculty of Agriculture",
+        items: [
+          "Department of Agronomy",
+          "Department of Soil Science",
+          "Department of Entomology",
+          "Department of Horticulture",
+          "Department of Plant Pathology",
+          "Department of Crop Botany",
+          "Department of Genetics and Plant Breeding",
+          "Department of Agricultural Extension Education",
+          "Department of Agricultural Chemistry",
+          "Department of Biochemistry and Molecular Biology",
+          "Department of Languages",
+          "Department of Agroforestry",
+          "Department of Seed Science and Technology",
+          "Department of Biotechnology",
+          "Department of Environmental Science",
+          "Department of Food Safety Management",
+        ],
+      },
+      {
+        group: "Faculty of Animal Husbandry",
+        items: [
+          "Department of Animal Breeding and Genetics",
+          "Department of Animal Science",
+          "Department of Animal Nutrition",
+          "Department of Dairy Science",
+          "Department of Poultry Science",
+        ],
+      },
+      {
+        group: "Faculty of Agricultural Economics & Rural Sociology",
+        items: [
+          "Department of Agricultural Economics",
+          "Department of Agricultural Finance and Banking",
+          "Department of Agricultural and Applied Statistics",
+          "Department of Agribusiness and Marketing",
+          "Department of Rural Sociology",
+        ],
+      },
+      {
+        group: "Faculty of Agricultural Engineering & Technology",
+        items: [
+          "Department of Farm Structure and Environmental Engineering",
+          "Department of Farm Power and Machinery",
+          "Department of Irrigation and Water Management",
+          "Department of Food Engineering and Technology",
+          "Department of Computer Science and Mathematics",
+          "Department of Physics",
+        ],
+      },
+      {
+        group: "Faculty of Fisheries",
+        items: [
+          "Department of Fisheries Biology and Genetics",
+          "Department of Aquaculture",
+          "Department of Fisheries Management",
+          "Department of Fisheries Technology",
+          "Department of Marine Fisheries Science",
+        ],
+      },
+    ],
+  },
 ];
 
 export const getUniversity = (id) =>
