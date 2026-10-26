@@ -350,6 +350,62 @@ export const UNIVERSITIES = [
       },
     ],
   },
+  {
+    id: "buet",
+    name: "Bangladesh University of Engineering and Technology",
+    short: "BUET",
+    logo: "assets/img/buet.png",
+    departments: [
+      {
+        group: "Faculty of Civil Engineering",
+        items: [
+          "Department of Civil Engineering",
+          "Department of Water Resources Engineering",
+        ],
+      },
+      {
+        group: "Faculty of Electrical and Electronic Engineering",
+        items: [
+          "Department of Electrical and Electronic Engineering",
+          "Department of Computer Science and Engineering",
+          "Department of Biomedical Engineering",
+        ],
+      },
+      {
+        group: "Faculty of Mechanical Engineering",
+        items: [
+          "Department of Mechanical Engineering",
+          "Department of Naval Architecture and Marine Engineering",
+          "Department of Industrial and Production Engineering",
+        ],
+      },
+      {
+        group: "Faculty of Architecture and Planning",
+        items: [
+          "Department of Architecture",
+          "Department of Urban and Regional Planning",
+          "Department of Humanities",
+        ],
+      },
+      {
+        group: "Faculty of Chemical and Materials Engineering",
+        items: [
+          "Department of Chemical Engineering",
+          "Department of Materials and Metallurgical Engineering",
+          "Department of Nanomaterials and Ceramic Engineering",
+          "Department of Petroleum and Mineral Resources Engineering",
+        ],
+      },
+      {
+        group: "Faculty of Science",
+        items: [
+          "Department of Chemistry",
+          "Department of Mathematics",
+          "Department of Physics",
+        ],
+      },
+    ],
+},
 ];
 
 export const getUniversity = (id) =>
